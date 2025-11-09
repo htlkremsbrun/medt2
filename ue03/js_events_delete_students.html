@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UE03 - Löschen </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .task {
+      background-color: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .task h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      margin: 4px;
+    }
+    button:hover { background-color: #2980b9; }
+    input[type="text"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      width: 260px;
+    }
+    ul { list-style: none; padding: 0; }
+    li {
+      background-color: #f8f9fa;
+      padding: 10px;
+      margin: 6px 0;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .row { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Events – Löschen</h1>
+
+  <!-- Task 5a: Löschen mit bereits vorhandenen Buttons -->
+  <div class="task">
+    <h2>Task 5a: Elemente löschen (Buttons vorhanden)</h2>
+    <p>Beim Klick auf „Löschen“ soll nur der jeweilige Eintrag entfernt werden.</p>
+
+    <ul id="todo-list-a">
+      <li>
+        <span>Beispielaufgabe A1</span>
+        <button class="btn-delete">Löschen</button>
+      </li>
+      <li>
+        <span>Beispielaufgabe A2</span>
+        <button class="btn-delete">Löschen</button>
+      </li>
+      <li>
+        <span>Beispielaufgabe A3</span>
+        <button class="btn-delete">Löschen</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Task 5b: Neue Einträge + Button per JS hinzufügen -->
+  <div class="task">
+    <h2>Task 5b: Löschen + neue Einträge (Button per JS hinzufügen)</h2>
+    <div class="row">
+      <input type="text" id="todo-input-b" placeholder="Neue Aufgabe eingeben..."/>
+      <button id="btn-add-b">Hinzufügen</button>
+    </div>
+    <ul id="todo-list-b">
+
+    </ul>
+  </div>
+
+  <script>
+    // =========================
+    // Task 5a – Starter (Buttons existieren bereits)
+    // =========================
+   
+    // =========================
+    // Task 5b – Starter (Button für neue Einträge per JS mit erstellen)
+    // =========================
+
+  </script>
+</body>
+</html>
